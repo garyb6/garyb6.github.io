@@ -1,0 +1,50 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+header{
+    box-sizing: border-box;
+}
+.portfolioContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 0;
+
+}
+
+header{}
+
+.nav{
+
+}
+
+.navList{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+.navItem{
+}
+
+.name{
+
+}
+
+.about{
+
+}
+
+.projects{
+
+}
+
+.contact{
+
+}
