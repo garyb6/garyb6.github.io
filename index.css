@@ -38,8 +38,10 @@ strong {font-weight: var(--fw-bold)}
 body{
     /* background-color: black; */
     background-image:
-    radial-gradient(circle at top, white 1%, black 30%);
+    radial-gradient(circle at top, purple, black 50%);
+    background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     color: var(--clr-light);
     margin: 0;
     font-family: var(--ff-primary);
