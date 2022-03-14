@@ -1,0 +1,103 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* will need to update at some point */
+:root{
+    --ff-primary: ;
+    /* --ff-secondary: ; for the tagtext */
+
+    --clr-light: white ;
+    --clr-dark: black;
+    --clr-accent: ;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --fs-h1: 3rem;
+    --fs-h2: 1.75rem;
+    --fs-h3: 1.25;
+    --fs-body: 0.9rem;
+}
+
+strong {font-weight: var(--fw-bold)}
+
+@media (min-width: 800px){
+    :root {
+    --fs-h1: 4rem;
+    --fs-h2: 2.5rem;
+    --fs-h3: 2.0;
+    --fs-body: 1.2rem;
+    }
+}
+
+/* this section needs changed */
+
+body{
+    /* background-color: black; */
+    background-image:
+    radial-gradient(circle at top, white 1%, black 30%);
+    background-repeat: no-repeat;
+    color: var(--clr-light);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.25;
+}
+
+img{
+    display:block;
+    max-width: 100%;
+}
+
+h1, h2, h3{
+    line-height: 1.2;
+    margin: 0;
+}
+
+h1{font-size: var(--fs-h1);}
+h2{font-size: var(--fs-h2);}
+h3{font-size: var(--fs-h3);}
+
+header{
+}
+
+.listStyle{
+    list-style: none;
+}
+
+
+.portfolioContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+
+}
+
+.name{
+width: 50vw; 
+height:15vh;
+
+}
+
+.about{
+width: 50vw; 
+height: 20vh;
+
+}
+
+.projects{
+width: 50vw; 
+height: 30vh;
+
+}
+
+.contact{
+align-items: center;
+width: 50vw; 
+height: 10vh;
+}
