@@ -36,7 +36,7 @@ strong {font-weight: var(--fw-bold)}
 /* this section needs changed */
 
 body{
-    /* background-color: black; */
+    background-color: black;
     background-image:
     radial-gradient(circle at top, purple, black 50%);
     background-size: cover;
@@ -72,6 +72,7 @@ header{
 
 
 .portfolioContainer{
+    border: 1px red solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,25 +82,32 @@ header{
 }
 
 .name{
-width: 50vw; 
-height:15vh;
+    width: 50vw; 
+    height:15vh;
 
 }
 
 .about{
+    border: 1px red solid;
 width: 50vw; 
 height: 20vh;
 
 }
 
 .projects{
-width: 50vw; 
-height: 30vh;
+    border: 1px red solid;
+    width: 50vw; 
+    height: 30vh;
 
 }
 
 .contact{
-align-items: center;
-width: 50vw; 
-height: 10vh;
+    border: 1px red solid;
+    align-items: center;
+    width: 50vw; 
+    height: 10vh;
+}
+
+.icons{
+    font-size: xx-small;
 }
