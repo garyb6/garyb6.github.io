@@ -83,35 +83,32 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
+    margin: 2%;
 
 }
 
 .name{
     width: 50vw; 
     height:15vh;
-
 }
 
 .about{
     border: 1px red solid;
-width: 50vw; 
-height: 20vh;
-
+    width: 50vw; 
+    height: auto;
 }
 
 .projects{
     border: 1px red solid;
     width: 50vw; 
-    height: 30vh;
+    height: auto;
 
 }
 
 .contact{
     border: 1px red solid;
-    align-items: center;
     width: 50vw; 
-    height: 10vh;
+    height: auto;
 }
 
 .icons{
