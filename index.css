@@ -78,7 +78,7 @@ header{
 
 
 .portfolioContainer{
-    border: 1px red solid;
+    /* border: 1px red solid; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -87,29 +87,30 @@ header{
 
 }
 
-.name{
-    width: 50vw; 
-    height:15vh;
+.name, .about, .projects, .contact{
+    width: 75vw; 
+    height: auto;
+    /* border: 1px white solid; */
 }
 
-.about{
+/* .about{
     border: 1px red solid;
-    width: 50vw; 
+    width: 75vw; 
     height: auto;
 }
 
 .projects{
     border: 1px red solid;
-    width: 50vw; 
+    width: 75vw; 
     height: auto;
 
 }
 
 .contact{
     border: 1px red solid;
-    width: 50vw; 
+    width: 75vw; 
     height: auto;
-}
+} */
 
 .icons{
     font-size: xx-small;
