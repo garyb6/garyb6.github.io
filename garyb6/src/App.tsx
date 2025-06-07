@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css';
+import ContactForm from './components/ContactForm';
+import avatar from './assets/avatar.svg';
 
 const App: React.FC = () => {
   return (
@@ -19,6 +21,13 @@ const App: React.FC = () => {
 
       <section id="home" className="hero">
         <div className="hero-content">
+          <div className="avatar-container">
+            <img 
+              src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Gary&backgroundColor=7b2cf9&clothing=shirt&clothingColor=ffffff&hair=shortHair&hairColor=000000&accessories=round&accessoriesColor=7b2cf9&facialHair=beard&facialHairColor=000000" 
+              alt="Gary Bennett Avatar" 
+              className="avatar"
+            />
+          </div>
           <h1>Gary Bennett</h1>
           <h2>Software Engineer</h2>
           <p>Building innovative solutions with modern technologies</p>
@@ -113,12 +122,7 @@ const App: React.FC = () => {
                 </a>
               </div>
             </div>
-            <form className="contact-form">
-              <input type="text" placeholder="Name" required />
-              <input type="email" placeholder="Email" required />
-              <textarea placeholder="Message" required></textarea>
-              <button type="submit" className="submit-button">Send Message</button>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </section>

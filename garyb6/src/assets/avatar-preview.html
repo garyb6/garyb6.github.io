@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Avatar Preview</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            background: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .avatar-preview {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            box-shadow: 0 0 20px rgba(0,0,0,0.2);
+            margin: 20px;
+        }
+        .debug-info {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <h1>Avatar Preview</h1>
+    <div class="debug-info">
+        <p>Image URL: <a href="https://api.dicebear.com/7.x/pixel-art/svg?seed=Gary&backgroundColor=7b2cf9&clothing=shirt&clothingColor=ffffff&hair=shortHair&hairColor=000000&accessories=round&accessoriesColor=7b2cf9&facialHair=beard&facialHairColor=000000" target="_blank">View Direct URL</a></p>
+    </div>
+    <img 
+        src="https://api.dicebear.com/7.x/pixel-art/svg?seed=Gary&backgroundColor=7b2cf9&clothing=shirt&clothingColor=ffffff&hair=shortHair&hairColor=000000&accessories=round&accessoriesColor=7b2cf9&facialHair=beard&facialHairColor=000000" 
+        alt="Gary Bennett Avatar" 
+        class="avatar-preview"
+        onerror="this.onerror=null; this.src='https://api.dicebear.com/7.x/avataaars/svg?seed=Gary&backgroundColor=7b2cf9&clothing=shirt&clothingColor=ffffff&hair=shortHair&hairColor=000000&accessories=round&accessoriesColor=7b2cf9&facialHair=beard&facialHairColor=000000'"
+    />
+    <div class="debug-info">
+        <p>If the image above doesn't load, try clicking the URL above to view it directly.</p>
+        <p>If that doesn't work, we can try a different avatar style or service.</p>
+    </div>
+</body>
+</html> 

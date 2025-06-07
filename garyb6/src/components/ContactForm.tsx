@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import styles from './ContactForm.module.css';
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
@@ -45,9 +46,14 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <div className="contact-form-container">
+    <div className={styles.contactFormContainer}>
+      <div className={styles.wipOverlay}>
+        <i className="fas fa-tools"></i>
+        <h3>Contact Form Coming Soon</h3>
+        <p>I'm currently working on implementing a secure contact form. In the meantime, please feel free to reach out through email or LinkedIn.</p>
+      </div>
       <h3 className="contact-subheading">Send a Message</h3>
-      <form className="contact-form" onSubmit={handleSubmit}>
+      <form className={`contact-form ${styles.contactForm}`} onSubmit={handleSubmit}>
         <input
           type="text"
           name="name"
@@ -55,6 +61,7 @@ const ContactForm: React.FC = () => {
           required
           value={formData.name}
           onChange={handleChange}
+          disabled
         />
         <input
           type="email"
@@ -63,6 +70,7 @@ const ContactForm: React.FC = () => {
           required
           value={formData.email}
           onChange={handleChange}
+          disabled
         />
         <textarea
           name="message"
@@ -70,20 +78,15 @@ const ContactForm: React.FC = () => {
           required
           value={formData.message}
           onChange={handleChange}
+          disabled
         />
         <button 
           type="submit" 
           className="submit-button"
-          disabled={status === 'sending'}
+          disabled
         >
-          <span>{status === 'sending' ? 'Sending...' : 'Submit'}</span>
+          <span>Coming Soon</span>
         </button>
-        {status === 'success' && (
-          <p className="success-message">Message sent successfully!</p>
-        )}
-        {status === 'error' && (
-          <p className="error-message">Failed to send message. Please try again.</p>
-        )}
       </form>
     </div>
   );

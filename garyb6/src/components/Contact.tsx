@@ -1,5 +1,4 @@
 import React from 'react';
-import ContactForm from './ContactForm';
 
 const Contact: React.FC = () => {
   return (
@@ -22,8 +21,11 @@ const Contact: React.FC = () => {
             </ul>
           </div>
           <div className="contact-form-section">
-            <h3>Send a Message</h3>
-            <ContactForm />
+            <div className="wip-message">
+              <i className="fas fa-tools"></i>
+              <h3>Contact Form Coming Soon</h3>
+              <p>I'm currently working on implementing a secure contact form. In the meantime, please feel free to reach out through email or LinkedIn.</p>
+            </div>
           </div>
         </div>
       </div>
